@@ -122,7 +122,7 @@ class WGAN_GP(object):
 
         """ Gradient Penalty """
         # This is borrowed from https://github.com/kodalinaveen3/DRAGAN/blob/master/DRAGAN.ipynb
-        alpha = tf.random_uniform(shape=self.inputs.get_shape(), minval=0.,maxval=1.)
+        alpha = tf.random_uniform(shape=[self.batch_size,1,1,1], minval=0.,maxval=1.)
         differences = G - self.inputs # This is different from MAGAN
         interpolates = self.inputs + (alpha * differences)
         _,D_inter,_=self.discriminator(interpolates, is_training=True, reuse=True)
