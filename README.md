@@ -45,7 +45,7 @@ Not as well as paper. The net structure is the same as GAN, but converges too sl
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_epoch059_test_all_classes.png)
 
 #WGAN_GP <br>
-The same as WGAN. It converges even more slowly
+The same as WGAN. It converges even more slowly. <br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch059IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch059_test_all_classes.png)
 
