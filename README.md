@@ -45,9 +45,10 @@ Not as well as paper. The net structure is the same as GAN, but converges too sl
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_epoch059_test_all_classes.png)
 
 #WGAN_GP <br>
-The same as WGAN. It converges even more slowly. <br>
+The first figure for IS was obtained after 60 epochs. Restore the weights, update another 240epochs and get figure 2. There are total 300 epochs for Discriminator, but only 60 epochs for generator (The same times as other models). Converges slowly.<br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch059IS.png) 
-![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch059_test_all_classes.png)
+![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch299IS.png) 
+![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch299_test_all_classes.png)
 
 #VAE <br>
 Collapsed. We also try to add or subtract bn layers, but it doesn't work.
