@@ -65,8 +65,8 @@ class WGAN_GP(object):
         with tf.variable_scope("discriminator", reuse=reuse):
 
             net = lrelu(conv2d(x, 64, 4, 4, 2, 2, name='d_conv1'))
-            net = lrelu(bn(conv2d(net, 128, 4, 4, 2, 2, name='d_conv2'), is_training=is_training, scope='d_bn2'))
-            net = lrelu(bn(conv2d(net, 256, 4, 4, 2, 2, name='d_conv3'), is_training=is_training, scope='d_bn3'))
+            net = lrelu(conv2d(net, 128, 4, 4, 2, 2, name='d_conv2'))
+            net = lrelu(conv2d(net, 256, 4, 4, 2, 2, name='d_conv3'))
             net = lrelu(conv2d(net, 1024, 4, 4, 4, 4, name='d_conv4'))
             net = tf.reshape(net, [self.batch_size, -1])
             out_logit = linear(net, 1, scope='d_fc5')
