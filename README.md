@@ -11,7 +11,7 @@ The following results can be reproduced with command:
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/ACGAN_IS.png)  
 
 #BEGAN <br>
-The result is not well,we don't pay much time to to adjust the superparameters.
+The result is not well,we don't pay much time to to adjust the superparameters. <br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/BEGAN_IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/BEGAN_train_59_0715.png)  
 
@@ -20,7 +20,7 @@ The result is not well,we don't pay much time to to adjust the superparameters.
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/CGAN_epoch059_test_all_classes.png) 
 
 #DRAGAN <br>
-Stable, robust, fast convergent. The best variation of GAN I have ever seen.
+Stable, robust, fast convergent. The best variation of GAN I have ever seen. <br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/DRAGAN_epoch099IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/DRAGAN_epoch059_test_all_classes.png) 
 
@@ -35,7 +35,7 @@ The net structure is the same as BEGAN, but collapse.
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/infoGAN_epoch059IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/infoGAN_epoch059_test_all_classes_style_by_style.png)
 
-#LSGAN <br>
+#LSGAN (Loss sensitive) <br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/LSGAN_epoch059IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/LSGAN_epoch059_test_all_classes.png)
 
@@ -45,8 +45,7 @@ Not as well as paper. The net structure is the same as GAN, but converges too sl
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_epoch059_test_all_classes.png)
 
 #WGAN_GP <br>
-The first figure for IS was obtained after 60 epochs. Restore the weights, update another 240epochs and get figure 2. There are total 300 epochs for Discriminator, but only 60 epochs for generator (The same times as other models). Converges slowly.<br>
-![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch059IS.png) 
+There are total 300 epochs for Discriminator, but only 60 epochs for generator (The same times as other models). Converges slowly.<br>
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch299IS.png) 
 ![](https://github.com/AliceAria/Performance-comparison-of-GAN-on-cifar-10/raw/master/images/WGAN_GP_epoch299_test_all_classes.png)
 
