@@ -136,9 +136,6 @@ class LSGAN(object):
             self.g_optim = tf.train.AdamOptimizer(self.learning_rate_G, beta1=self.beta1) \
                       .minimize(self.g_loss, var_list=g_vars)
 
-        # weight clipping
-        self.clip_D = [p.assign(tf.clip_by_value(p, -0.01, 0.01)) for p in d_vars]
-
         """" Testing """
         # for test
         self.fake_images = self.generator(self.z, is_training=False, reuse=True)
